@@ -39,10 +39,11 @@ section {
 
 /* ---------------HEADING-------------------- */
 h1,
-h2 {   
+h2,
+h3 {   
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;  
+ 
 }
 
 h1 {
@@ -51,6 +52,7 @@ h1 {
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
+    letter-spacing: 1px; 
 }
 
 h2 {
@@ -58,7 +60,14 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    letter-spacing: 1px; 
 }
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
 
 h2:after {
     display: block;
