@@ -273,6 +273,11 @@ header{
     margin-bottom: 50px;
 }
 
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+
 .works-step div{
     color: #cf6d22;
     border: 2px solid #cf6d22;
@@ -287,5 +292,9 @@ header{
     margin-right: 25px;
 }
 
-
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
 
