@@ -14,11 +14,11 @@ $(document).ready(function() {
     
      /* Scroll on buttons */
     $('.js--scroll-to-plans').click(function () {
-        $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000)       
+        $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
     });
     //js--scroll-to-start
      $('.js--scroll-to-start').click(function () {
-        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000)       
+        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
     });
     
 
@@ -31,8 +31,7 @@ $('a[href*="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+    if  (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
     ) {
@@ -92,5 +91,22 @@ $('a[href*="#"]')
         offset: '50%'
     });
     
+	
+	
+	 /* Mobile navigation */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(200);
+        
+        if (icon.hasClass('icon ion-ios-menu')) {
+            icon.addClass('icon ion-ios-close');
+            icon.removeClass('icon ion-ios-menu');
+        } else {
+            icon.addClass('icon ion-ios-menu');
+            icon.removeClass('icon ion-ios-close');
+        }        
+    });
    
 });

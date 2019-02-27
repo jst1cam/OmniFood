@@ -8,22 +8,22 @@ Orange color: #cf6d22
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
+
     box-sizing: border-box;
 }
 
 html,
 body {
     background-color: #fff;
-    color: #747171;
+    color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
-    font font-weight: 300;
+    font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1}
+.clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
     clear: both;
@@ -84,7 +84,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #cf6d22;
+    background-color: #e67e22;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -108,7 +108,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #cf6d22;
+    color: #e67e22;
     margin-bottom: 10px;
 }
 
@@ -128,7 +128,7 @@ h2:after {
 
 /* ---------------LINKS-------------------- */
 a:link,
-a:active{
+a:visited{
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -162,7 +162,7 @@ input[type=submit] {
 input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
-    color: white;
+    color: #fff;
     margin-right: 15px;
 }
 
@@ -180,15 +180,15 @@ input[type=submit]:active {
 }
 
 .btn-full:hover,
-.btn-full:active,
-input[type=submit]{
+.btn-full:active{
+	
     border: 1px solid #cf6d17;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active{
     border: 1px solid #cf6d17;
-    color: white;
+    color: #fff;
 }
 
 /* ------------------------------------------ */
@@ -248,7 +248,7 @@ header{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 90;
+    font-size: 90%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -256,9 +256,22 @@ header{
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cf6d22;
+    border-bottom: 2px solid #e67e22;
+ }
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;				  
 }
 
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -266,7 +279,7 @@ header{
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #e8e2e2;
+    box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
 
@@ -316,7 +329,7 @@ header{
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color:black;
+    background-color: #000;
 }
 
 .meal-photo img{
@@ -342,17 +355,20 @@ header{
 /* ------------------------------------------ */
 
 .section-steps {
-    background-color: #e8e4e4;
+    background-color: #f4f4f4;
 }
 
+.steps-box {
+    margin-top: 30px;
+}					 
 
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
 }
 
 .steps-box:last-child {
+	text-align: left;		 
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -370,17 +386,22 @@ header{
 }
 
 .works-step div{
-    color: #cf6d22;
-    border: 2px solid #cf6d22;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
+    color: #e67e22;
     font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+
+    border-radius: 50%;
+    display: inline-block;
+				
+    text-align: center;
+				 
+				
+					
     margin-right: 25px;
+    float: left;
+    padding: 5px;
 }
 
 
@@ -457,7 +478,7 @@ cite img{
 /* ------------------------------------------ */
 
 .section-plans{
-    background-color: #e8e4e4;
+    background-color: #f4f4f4;
 }
 
 .plan-box{
@@ -465,31 +486,33 @@ cite img{
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    -webkit-box-shadow: 0 2px 2px grey;
-    box-shadow: 0 2px 2px grey
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef
 }
 
 .plan-box div{
     padding: 15px;
-    border-bottom: 1px solid #e2dfdf
+    border-bottom: 1px solid #e8e8e8
 }
 
-.plan-box div:last-child{
-    text-align: center;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:first-child{
-    background-color: #efe8e8;
+.plan-box div:first-child {
+    background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+
 
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #cf6d22;
+    color: #e67e22;
 }
 
 .plan-price span {
@@ -526,7 +549,7 @@ textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #cbcbcb;
+    border: 1px solid #ccc;
 }
 
 textarea {
@@ -547,7 +570,7 @@ input[type=checkbox] {
 footer {
     background-color: #333;
     padding: 50px;
-    font-size: 80%
+    font-size: 80%;
 }
 
 .footer-nav {
